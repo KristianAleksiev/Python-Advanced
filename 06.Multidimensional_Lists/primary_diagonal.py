@@ -1,11 +1,3 @@
-n = int(input())
-
-matrix = []
-
-for _ in range(n):
-    matrix.append([int(x) for x in input().split()])
-
-
 def get_primary_diagonal_sum(matrix):
     the_sum = 0
     n = len(matrix)
@@ -17,5 +9,11 @@ def get_primary_diagonal_sum(matrix):
         the_sum += matrix[i][i]
     return the_sum
 
+n = int(input())
+
+matrix = []
+
+for _ in range(n):
+    matrix.append([int(x) for x in input().split()])
 
 print(get_primary_diagonal_sum(matrix))
